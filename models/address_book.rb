@@ -22,4 +22,10 @@ class AddressBook
   def remove_entry(entry)
     @entries.delete_if { |e| e.name == entry.name }
   end
+
+  def length
+    @entries.length 
+  end
+
+
 end
